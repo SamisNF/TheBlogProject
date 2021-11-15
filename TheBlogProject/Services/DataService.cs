@@ -61,9 +61,10 @@ namespace TheBlogProject.Services
             var adminUser = new BlogUser()
             {
                 Email = "mrfredtechnology@gmail.com",
-                UserName = "Sam",
+                UserName = "mrfredtechnology@gmail.com",
                 FirstName = "Samis",
-                LastName = "Fredrickson",                
+                LastName = "Fredrickson",
+                DisplayName = "SamAdmin",
                 PhoneNumber = "(405) 812-2736",
                 EmailConfirmed = true
             };
@@ -78,10 +79,10 @@ namespace TheBlogProject.Services
             var modUser = new BlogUser()
             {
                 Email = "metroparkokc@gmail.com",
-                UserName = "ModKing",
+                UserName = "metroparkokc@gmail.com",
                 FirstName = "Samis",
                 LastName = "Fredrickson",
-
+                DisplayName = "SamMod",
                 PhoneNumber = "(405) 848-1343",
                 EmailConfirmed = true
             };
