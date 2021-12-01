@@ -1,0 +1,17 @@
+﻿
+button.btn-sm, a.btn-sm {
+    line-height: 1;
+    border-radius: 10px;
+}
+
+option {
+    font-weight: bolder;
+}
+
+/*!!! This targeted CSS is not working.*/
+/*This code* is added at the very end of "Working With Tags Part 4*/ 
+/*I am skipping this for now. I can choose to come back and fix it later. 11/23/2021*/
+div.swal2-container.swal2-center.swal2-backdrop-show > div {
+    outline: 4px solid black;
+    border: 2px solid #ff993b;
+}

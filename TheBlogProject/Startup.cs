@@ -47,10 +47,16 @@ namespace TheBlogProject
 
             services.AddScoped<DataService>();
 
+            services.AddScoped<BlogSearchService>();
+
             //Register a preconfigured instance of the MailSettings class
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
 
             services.AddScoped<IBlogEmailSender, EmailService>();
+
+            services.AddScoped<IImageService, BasicImageService>();
+
+            services.AddScoped<ISlugService, BasicSlugService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,8 +84,14 @@ namespace TheBlogProject
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "SlugRoute",
+                    pattern: "BlogPosts/UrlFriendly/{slug}",
+                    defaults: new { controller = "Posts", action = "Details"});
+                
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
                 endpoints.MapRazorPages();
             });
         }

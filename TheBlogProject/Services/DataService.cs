@@ -64,7 +64,6 @@ namespace TheBlogProject.Services
                 UserName = "mrfredtechnology@gmail.com",
                 FirstName = "Samis",
                 LastName = "Fredrickson",
-                DisplayName = "SamAdmin",
                 PhoneNumber = "(405) 812-2736",
                 EmailConfirmed = true
             };
@@ -81,8 +80,7 @@ namespace TheBlogProject.Services
                 Email = "metroparkokc@gmail.com",
                 UserName = "metroparkokc@gmail.com",
                 FirstName = "Samis",
-                LastName = "Fredrickson",
-                DisplayName = "SamMod",
+                LastName = "Fredrickson",                
                 PhoneNumber = "(405) 848-1343",
                 EmailConfirmed = true
             };
